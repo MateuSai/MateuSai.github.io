@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article>
+    <h1>{{ page.title }}</h1>
+    <time id="postDate">{{ page.date | date_to_string }}</time>
+    <br>
+    <br>
+
+    {{ content }}
+
+    <nav id="postNav">
+        {% for post in site.posts %}
+        {% if post.title == page.prev_tutorial %}
+        <a id="prevTut" href="{{ post.url }}">
+            Previous tutorial: {{ post.title }}
+        </a>
+        {% endif %}
+        {% if post.title == page.next_tutorial %}
+        <a id="nextTut" href="{{ post.url }}">
+            Next tutorial: {{ post.title }}
+        </a>
+        {% endif %}
+        {% endfor %}
+        </footer>
+</article>

@@ -1,0 +1,54 @@
+@import "themes/default";
+
+body {
+    margin: 0;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+main {
+    margin-right: 23vw;
+    margin-left: 23vw;
+    padding: 16px;
+    background-color: lighten($background-color, 7%);
+}
+@media (max-aspect-ratio: 4/3) {
+    main {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+pre {
+    padding: 10px;
+    overflow: auto;
+}
+
+code {
+    font-size: large;
+}
+
+p {
+    font-size: larger;
+}
+
+a {
+    color: $link-base-color;
+}
+a:visited {
+    color: $link-visited-color;
+}
+a:hover {
+    color: $link-hover-color;
+}
+
+.postPeek {
+    background-color: lighten($background-color, 15%);
+    padding: 15px;
+    margin: 30px;
+    border-radius: 16px;
+}
+
+@import "top_nav";
+@import "post";
+@import "footer"

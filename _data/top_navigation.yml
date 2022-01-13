@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+- name: Godot
+  link: /godot.html
+- name: Ceramic
+  link: /ceramic.html

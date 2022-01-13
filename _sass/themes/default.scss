@@ -1,0 +1,12 @@
+$background-color: #191923;
+
+$top-nav-bar-background-color: #119DA4;
+$top-nav-bar-hover-background-color: lighten($top-nav-bar-background-color, 8%);
+
+$footer-background-color: lighten($background-color, 3%);
+
+$text-color: white;
+
+$link-base-color: #659bdd;
+$link-visited-color: darken($link-base-color, 15%);
+$link-hover-color: $text-color;

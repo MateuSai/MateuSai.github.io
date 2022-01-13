@@ -1,0 +1,20 @@
+footer {
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: $footer-background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    max-width: 64px;
+    opacity: 0.6;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+footer img:hover {
+    opacity: 1;
+}
