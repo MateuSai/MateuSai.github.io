@@ -1,6 +1,6 @@
 ---
-layout: post
-prev_tutorial: Arrival Steering
+post_id: wander_and_enclosure
+prev_tutorial: arrival
 ---
 
 In this tutorial we are going to implement the wander and enclosure steerings. We will make the character move randomly inside a defined area. This steering is useful, for example, with characters that don’t have anything to do until the player approaches them.
@@ -8,6 +8,8 @@ In this tutorial we are going to implement the wander and enclosure steerings. W
 Before starting coding, let me explain a little how the wander steering works. We create a circle in front of the character. Then, we add the radius of the circle with a random angle to the vector to the circle and we obtain the desired velocity. We will modify the angle a little every frame, so the character won’t change direction all of a sudden.
 
 ![wander vectors](/assets/images/godot/steering behaviours/wander vectors start.jpg)
+
+<!--more-->
 
 With that said, it’s time to start coding.
 

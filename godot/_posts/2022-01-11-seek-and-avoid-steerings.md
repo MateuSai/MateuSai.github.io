@@ -1,9 +1,11 @@
 ---
-layout: post
-next_tutorial: Arrival Steering
+post_id: seek_and_avoid
+next_tutorial: arrival
 ---
 
 While I was making the roguelike series, I found a few problems with the pathfinding: the paths are weird, the enemies can’t detect other enemies and the movement doesn’t look natural. So, I will make some tutorials about steering behaviours, a way to make the characters aware of their surroundings. We will start implementing the seek and avoid obstacles behaviours.
+
+<!--more-->
 
 But befeore, I want to send special thanks to beasty for making [the art](https://senukahws.itch.io/grassanddirt){:target="_blank"}, thanks bro!
 

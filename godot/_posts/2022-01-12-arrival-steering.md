@@ -1,12 +1,14 @@
 ---
-layout: post
-prev_tutorial: Seek And Avoid Steerings
-next_tutorial: Wander And Enclosure Steerings
+post_id: arrival
+prev_tutorial: seek_and_avoid
+next_tutorial: wander_and_enclosure
 ---
 
 In the last tutorial, we made the character follow the mouse and avoid rocks, but if we leave the mouse still, we can observe that the character doesn’t stop moving. He keeps moving like a pendulum.
 
 ![pendulum movement](/assets/images/godot/steering behaviours/pendulum movement.gif)
+
+<!--more-->
 
 In this tutorial we will make the character reduce his velocity as he approaches the mouse until completely stopping. We will implement the arrival steering.
 
