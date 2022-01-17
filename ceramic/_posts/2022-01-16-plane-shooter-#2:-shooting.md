@@ -219,7 +219,7 @@ We need to detect when the bullet exits the screen, and remove it as fast as pos
 function update(delta:Float) {
     x += direction.x * speed * delta;
     y += direction.y * speed * delta;
-    // log.debug(x + " " + y); // Print bullet position to the terminal
+    log.debug(x + " " + y); // Print bullet position to the terminal
 
     // Destroy the bullet when she exits the screen
     if (x + width * anchorX < 0 || x - width * anchorX > screen.width || y + height * anchorY < 0 || y - height * anchorY > screen.height) {
@@ -229,3 +229,9 @@ function update(delta:Float) {
 {% endhighlight %}
 
 I only check if the object is outside the screen, horizontally or vertically, and, in that case, I free it with his destroy function. We can get the width and height of the game using the shortcut screen variable. Note that I use the anchor values to offset the position to make sure that the bullet is not freed with half his texture visible, remember that we configured the texture to be centred at the object position (with anchor(0.5, 0.5) in the constructor).
+
+Try it again:
+
+![bullet position debug with bullet destroy](/assets/images/plane_shooter/2/bullet position debug with bullet destroy.gif)
+
+When the bullets exit the screen, we stop to receive their position, as we can see in the terminal. The bullets have been destroyed correctly!

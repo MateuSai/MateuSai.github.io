@@ -1,3 +1,4 @@
+// source: https://code-boxx.com/html-scroll-to-top-button/
 var backToTopButton = document.getElementById("backToTopButton");
 
 function scrollUp() {
