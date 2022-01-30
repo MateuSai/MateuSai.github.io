@@ -1,0 +1,9 @@
+---
+title: Memes
+---
+
+{% for image in site.static_files %}
+{% if image.path contains 'images/memes' %}
+<img src="{{ image.path }}" alt="meme" />
+{% endif %}
+{% endfor %}

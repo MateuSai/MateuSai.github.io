@@ -19,6 +19,12 @@ main {
     }
 }
 
+img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
 pre {
     padding: 10px;
     overflow: auto;
