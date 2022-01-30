@@ -11,11 +11,13 @@ The window’s width and height can be set from the Project.hx file located in t
 
 <!--more-->
 
-The new function of the Project.hx file is the starting point of our app. This is where the window settings are specified and the main scene is loaded. By default, the width and height have a size of 640 and 480 pixels respectively. This is a 640/480 = 4/3 aspect ratio. Most computer screens have a 16/9 aspect ratio, so I changed the width to 1024 and the height to 576. Check [this website](https://pacoup.com/2011/06/12/list-of-true-169-resolutions/){:target="_blank"} for a list of 16/9 resolutions.
+The new function of the Project.hx file is the starting point of our app. This is where the window settings are specified and the main scene is loaded. By default, the width and height of the game have a size of 640 and 480 pixels respectively. This is a 640/480 = 4/3 aspect ratio. Most computer screens have a 16/9 aspect ratio, so I kept the width of 640 but I changed the height to 576. Also, I changed the size of the window to 1024 width and 570 height using the windowSize function. The scaling is set to FIT by default, so, the game will scale to fit the window, but the game size won’t change. Check [this website](https://pacoup.com/2011/06/12/list-of-true-169-resolutions/){:target="_blank"} for a list of 16/9 resolutions.
 
 {% highlight haxe %}
-settings.targetWidth = 1024;
-settings.targetHeight = 576;
+settings.targetWidth = 640;
+settings.targetHeight = 360;
+settings.windowSize(1024, 570);
+settings.scaling = FIT;
 {% endhighlight %}
 
 Run the game and you will see that the window dimensions have changed to the new ones.
