@@ -1,9 +1,16 @@
 @import "themes/default";
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     background-color: $background-color;
     color: $text-color;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 main {
@@ -11,7 +18,9 @@ main {
     margin-left: 23vw;
     padding: 16px;
     background-color: lighten($background-color, 7%);
+    flex-grow: 1;
 }
+
 @media (max-aspect-ratio: 4/3) {
     main {
         margin-right: 0;
@@ -41,9 +50,11 @@ p {
 a {
     color: $link-base-color;
 }
+
 a:visited {
     color: $link-visited-color;
 }
+
 a:hover {
     color: $link-hover-color;
 }

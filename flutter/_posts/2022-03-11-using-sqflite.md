@@ -14,6 +14,8 @@ dependencies:
   path_provider: ^2.0.9
 {% endhighlight %}
 
+<!--more-->
+
 
 <br>
 ## Open the database
