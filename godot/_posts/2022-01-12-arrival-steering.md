@@ -6,7 +6,7 @@ next_tutorial: wander_and_enclosure
 
 In the last tutorial, we made the character follow the mouse and avoid rocks, but if we leave the mouse still, we can observe that the character doesn’t stop moving. He keeps moving like a pendulum.
 
-![pendulum movement](/assets/images/godot/steering behaviours/pendulum movement.gif)
+![pendulum movement](/assets/images/godot/steering_behaviours/pendulum_movement.gif)
 
 <!--more-->
 
@@ -18,7 +18,7 @@ First of all, let’s declare a new variable. Open your character script and add
 var arrival_zone_radius: int = 20
 {% endhighlight %}
 
-![arrival zone](/assets/images/godot/steering behaviours/arrival zone.jpg)
+![arrival zone](/assets/images/godot/steering_behaviours/arrival_zone.jpg)
 
 Create a new function called “arrival_steering” that returns a Vector2 containing the arrival steering. Add a Vector2 parameter with the name “vector_to_targe” that stores the vector to the target, in this case, the mouse.
 
@@ -34,7 +34,7 @@ func arrival_steering(vector_to_target: Vector2) -> Vector2:
     return desired_velocity - velocity
 {% endhighlight %}
 
-![arrival desired velocity](/assets/images/godot/steering behaviours/arrival desired velocity.jpg)
+![arrival desired velocity](/assets/images/godot/steering_behaviours/arrival_desired_velocity.jpg)
 
 Scroll up to the physics_process function. Before calling the steering functions, add the “vector_to_target” variable, the vector that goes from the character position to the target position.
 
@@ -70,6 +70,6 @@ func _physics_process(_delta: float) -> void:
 
 This is the final result:
 
-![arrival steering](/assets/images/godot/steering behaviours/arrival steering.gif)
+![arrival steering](/assets/images/godot/steering_behaviours/arrival_steering.gif)
 
 <iframe src="https://www.youtube.com/embed/UauTCP933as"></iframe>

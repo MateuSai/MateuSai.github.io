@@ -28,7 +28,7 @@ func seek_steering() -> Vector2:
 	
 	return desired_velocity - velocity
 {% endhighlight %}
-![seek vectors](/assets/images/godot/steering behaviours/seek vectors.jpg)
+![seek vectors](/assets/images/godot/steering_behaviours/seek_vectors.jpg)
 
 Now, in the _physics_process function, create a variable called “steering” and initialise it to a zero vector. We will add all the steering to this variable, for the moment, add the seek steering to it. After adding all the steerins, clamp the variable to the maximum steering defined earlier.
 
@@ -50,14 +50,14 @@ func _physics_process(_delta: float) -> void:
 
 Play the game. The character follows the mouse, but he doesn't change direction instantly, he does it smoothly.
 
-![seek steering](/assets/images/godot/steering behaviours/seek steering.gif)
+![seek steering](/assets/images/godot/steering_behaviours/seek_steering.gif)
 
 To dodge the rocks we have to implement another steering behaviour, the obstacle avoidance steering.
 
 Add a Node2D in your character scene and instance a raycast as a child into it. Make it face the right and enable it. Add 2 more raycasts inside the node: one above, and one below. These raycasts will detect the obstacles, the distance between them determine the separation to the obstacle. The bigger the distance between raycasts, the bigger the separation.
 
-![raycast nodes](/assets/images/godot/steering behaviours/raycast nodes.jpg)
-![character with raycasts](/assets/images/godot/steering behaviours/character with raycasts.png)
+![raycast nodes](/assets/images/godot/steering_behaviours/raycast_nodes.jpg)
+![character with raycasts](/assets/images/godot/steering_behaviours/character_with_raycasts.png)
 
 Back at the character script, create a variable called “avoid_force” to determine the tendency of the player to avoid obstacles. I want to give priority to avoid the obstacles, so, I initialise the variable to 1000. Also, add an onready variable for the Node2D that contains all the raycasts.
 
@@ -85,8 +85,8 @@ func avoid_obstacles_steering() -> Vector2:
 			
 	return Vector2.ZERO
 {% endhighlight %}
-![avoid vectors](/assets/images/godot/steering behaviours/avoid vectors 2.jpg)
-![avoid vectors](/assets/images/godot/steering behaviours/avoid vectors.jpg)
+![avoid vectors](/assets/images/godot/steering_behaviours/avoid_vectors_2.jpg)
+![avoid vectors](/assets/images/godot/steering_behaviours/avoid_vectors.jpg)
 
 To apply the new steering, just add it to the steering variable in the _physics_process function.
 
@@ -104,6 +104,6 @@ func _physics_process(_delta: float) -> void:
 
 Play the game again and take a look, now, the character dodges the obstacles.
 
-![avoid steering](/assets/images/godot/steering behaviours/avoid steering.gif)
+![avoid steering](/assets/images/godot/steering_behaviours/avoid_steering.gif)
 
 <iframe src="https://www.youtube.com/embed/71NIMTfaBKQ"></iframe>

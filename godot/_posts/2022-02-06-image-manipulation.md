@@ -6,14 +6,14 @@ Hey bros, I was making a random character generated and I needed to manipulate t
 
 The project I’m going to use only has two nodes: a Node2D as root, and a Sprite to display the modified image as his child.
 
-![scene](/assets/images/godot/image manipulation/scene.jpg)
+![scene](/assets/images/godot/image_manipulation/scene.jpg)
 
 <!--more-->
 
 I will use two images: a jpg picture of a cat, and a png with the godot icon.
 
-![cat image](/assets/images/godot/image manipulation/YAMEROOO.jpg)
-![godot icon](/assets/images/godot/image manipulation/Godot Icon.png)
+![cat image](/assets/images/godot/image_manipulation/YAMEROOO.jpg)
+![godot icon](/assets/images/godot/image_manipulation/Godot_Icon.png)
 
 Let’s begin, create a script for the Sprite node and store the 2 textures in constants.
 
@@ -50,7 +50,7 @@ texture = image_texture
 
 Note that I used the get_width function to get the width of the image in pixels. We can’t assign an Image to the Sprite texture directly, we need to convert it to an ImageTexture first. It’s easy, we create a new ImageTexture instance and we call his create_from_image function passing the modified image as the argument. Finally, we set the sprite texture. That’s the result:
 
-![cropped cat](/assets/images/godot/image manipulation/cropped cat.jpg)
+![cropped cat](/assets/images/godot/image_manipulation/cropped_cat.jpg)
 
 <br>
 
@@ -67,7 +67,7 @@ image_texture.create_from_image(godot_image)
 texture = image_texture
 {% endhighlight %}
 
-![2 half godots](/assets/images/godot/image manipulation/2 half godots.jpg)
+![2 half godots](/assets/images/godot/image_manipulation/2_half_godots.jpg)
 
 And that’s the result storing the blit_rect in a new image:
 
@@ -83,7 +83,7 @@ image_texture.create_from_image(image)
 texture = image_texture
 {% endhighlight %}
 
-![half godot](/assets/images/godot/image manipulation/half godot.jpg)
+![half godot](/assets/images/godot/image_manipulation/half_godot.jpg)
 
 To create a new Image we have to specify his width, height, bitmaps, and format. I use the values of the godot_image variable, but with half his width because I want to cut the image by the middle.
 
@@ -105,7 +105,7 @@ image_texture.create_from_image(cat_image)
 texture = image_texture
 {% endhighlight %}
 
-![cat with godot face (blit_rect)](/assets/images/godot/image manipulation/cat with godot face (blit_rect).jpg)
+![cat with godot face (blit_rect)](/assets/images/godot/image_manipulation/cat_with_godot_face_(blit_rect).jpg)
 
 I reduced the size of the godot image to half with the shrink_x2 function. The images can’t be merged if their format is different. For that reason, I converted the cat image to the godot image format (to png).
 
@@ -129,4 +129,4 @@ texture = image_texture
 
 This time, instead of overriding the pixels, they are **mixed**. So, the transparent pixels of the godot image will have no effect and we will get this:
 
-![cat with godot face (blend_rect)](/assets/images/godot/image manipulation/cat with godot face (blend_rect).jpg)
+![cat with godot face (blend_rect)](/assets/images/godot/image_manipulation/cat_with_godot_face_(blend_rect).jpg)

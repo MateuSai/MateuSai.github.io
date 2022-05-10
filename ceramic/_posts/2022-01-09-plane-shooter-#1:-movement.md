@@ -94,7 +94,7 @@ override function create() {
 
 Play the game, control shift B,  and you will see the player at the centre of the screen.
 
-![player at the centre of the game](/assets/images/plane_shooter/1/display player.png)
+![player at the centre of the game](/assets/images/plane_shooter/1/display_player.png)
 
 
 Now that we spawned the player, it’s time to make it move.
@@ -288,4 +288,4 @@ To move the player we have to call the update function of his parent class, the 
 
 Finally, play the game and try to move the player:
 
-![player moving](/assets/images/plane_shooter/1/player moving.gif)
+![player moving](/assets/images/plane_shooter/1/player_moving.gif)

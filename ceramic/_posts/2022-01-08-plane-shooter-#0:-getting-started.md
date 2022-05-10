@@ -13,12 +13,12 @@ To create a new project you only have to type {% highlight shell %}ceramic init 
 
 I will use [VSCode](https://code.visualstudio.com){:target="_blank"}, with the [Ceramic extension](https://marketplace.visualstudio.com/items?itemName=jeremyfa.ceramic){:target="_blank"}, as the code editor. To run the code I will press Control + Shift + B, but you can also use commands to run the app if you want. For more information take a look at [this tutorial](https://ceramic-engine.com/guides/getting-started/editing-your-project/){:target="_blank"}. If you run the app now, it will appear the Ceramic logo by default:
 
-![default app](/assets/images/plane_shooter/0/default app.png)
+![default app](/assets/images/plane_shooter/0/default_app.png)
 
 One last thing. I will use the [Kenney’s Pixel Shmup asset pack](https://www.kenney.nl/assets/pixel-shmup){:target="_blank"} to make the game. This bro, Kenney, has a lot of other free assets on [his webpage](https://www.kenney.nl){:target="_blank"}, so, go take a lot if you need some art for your games. Thanks for the asset pack bro!
 
 After downloading the asset pack, move the extracted content inside the assets directory of the Ceramic project.
 
-![asset pack inside assets directory](/assets/images/plane_shooter/0/asset pack inside assets directory.png)
+![asset pack inside assets directory](/assets/images/plane_shooter/0/asset_pack_inside_assets_directory.png)
 
 With all that, we are ready to start creating our game! In the next tutorial we will make a basic top-down movement, I hope to see you there :)

@@ -7,7 +7,7 @@ In this tutorial we are going to make a shooting mechanic for the plane we added
 
 The window’s width and height can be set from the Project.hx file located in the src directory.
 
-![Project.hx location](/assets/images/plane_shooter/2/Project.hx location.jpg)
+![Project.hx location](/assets/images/plane_shooter/2/Project.hx_location.jpg)
 
 <!--more-->
 
@@ -22,7 +22,7 @@ settings.scaling = FIT;
 
 Run the game and you will see that the window dimensions have changed to the new ones.
 
-![new resolution](/assets/images/plane_shooter/2/new resolution.jpg)
+![new resolution](/assets/images/plane_shooter/2/new_resolution.jpg)
 
 Now, because the screen is in landscape, let’s make the player face the right. Just go to his constructor and change his rotation variable to 90 degrees.
 
@@ -196,7 +196,7 @@ So, after 0.6 seconds passed after shooting, the function we passed as the third
 
 Now, if you play the game and press the shoot key, you will see that the player shoots:
 
-![player shooting](/assets/images/plane_shooter/2/player shooting.gif)
+![player shooting](/assets/images/plane_shooter/2/player_shooting.gif)
 
 So, nice job, right? NO! We are shooting a lot of bullets, but what happens with them when they leave the screen? To see it, debug the x and y position at the update function and play the game again, this is the output I get:
 
@@ -209,7 +209,7 @@ function update(delta:Float) {
 }
 {% endhighlight %}
 
-![bullet position debug](/assets/images/plane_shooter/2/bullet position debug.gif)
+![bullet position debug](/assets/images/plane_shooter/2/bullet_position_debug.gif)
 
 This is what will happen if we don’t free the bullets, they will move to the right infinitely until…
 
@@ -234,6 +234,6 @@ I only check if the object is outside the screen, horizontally or vertically, an
 
 Try it again:
 
-![bullet position debug with bullet destroy](/assets/images/plane_shooter/2/bullet position debug with bullet destroy.gif)
+![bullet position debug with bullet destroy](/assets/images/plane_shooter/2/bullet_position_debug_with_bullet_destroy.gif)
 
 When the bullets exit the screen, we stop to receive their position, as we can see in the terminal. The bullets have been destroyed correctly!

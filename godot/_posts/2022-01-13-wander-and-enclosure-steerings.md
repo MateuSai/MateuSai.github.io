@@ -7,7 +7,7 @@ In this tutorial we are going to implement the wander and enclosure steerings. W
 
 Before starting coding, let me explain a little how the wander steering works. We create a circle in front of the character. Then, we add the radius of the circle with a random angle to the vector to the circle and we obtain the desired velocity. We will modify the angle a little every frame, so the character won’t change direction all of a sudden.
 
-![wander vectors](/assets/images/godot/steering behaviours/wander vectors start.jpg)
+![wander vectors](/assets/images/godot/steering_behaviours/wander_vectors_start.jpg)
 
 <!--more-->
 
@@ -42,7 +42,7 @@ func wander_steering() -> Vector2:
 
 This function will randomise the direction of the bro using the wander angle. The wander angle will be the new direction of the bro, he will rotate his velocity vector to attempt to match the wander angle.
 
-![wander vectors](/assets/images/godot/steering behaviours/wander vectors.jpg)
+![wander vectors](/assets/images/godot/steering_behaviours/wander_vectors.jpg)
 
 Go to the _physics_process function and add an if after declaring the steering variable. Check if the wandering variable is true. If so, add the wander steering, elsewise add the rest of the steering we did in the previous tutorials. This could be done with a state machine, but I don’t want to make it too complex.
 
@@ -71,7 +71,7 @@ func _init() -> void:
 
 Now, you can play the game and the character will move randomly around the map. But we have a problem, the bro can go beyond the camera limits, we must create a new steering to limit his movement area: the enclosure steering.
 
-![wander steering](/assets/images/godot/steering behaviours/wander steering.gif)
+![wander steering](/assets/images/godot/steering_behaviours/wander_steering.gif)
 
 So, back at the character script, add an export variable called “enclosure_zone” and store in it a Rect2 with the zone where you want the bro to wander. The Rect2 has two Vector2: the first one is the position where the zone starts, and the second one is the dimensions of the zone: the width and the height.
 
@@ -106,7 +106,7 @@ func enclosure_steering() -> Vector2:
 
 To summarise, if the bro oversteps the limits of the enclosure area, we create a force to make it turn inside the zone again.
 
-![enclosure vectors](/assets/images/godot/steering behaviours/enclosure vectors.jpg)
+![enclosure vectors](/assets/images/godot/steering_behaviours/enclosure_vectors.jpg)
 
 To apply the steering, add the function we just implemented to the steering variable in the _physics_process function, above the line where we add the wander steering.
 
@@ -122,6 +122,6 @@ func _physics_process(_delta: float) -> void:
 
 Play the game one last time. The bro wanders around the map, but cannot exit the limits of the enclosure zone. He also has the “avoid obstacles steering”, so he dodges the rocks too.
 
-![enclosure steering](/assets/images/godot/steering behaviours/enclosure steering.gif)
+![enclosure steering](/assets/images/godot/steering_behaviours/enclosure_steering.gif)
 
 <iframe src="https://www.youtube.com/embed/FmKJ9rnNMMc"></iframe>
