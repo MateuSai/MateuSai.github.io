@@ -40,7 +40,7 @@ pre {
 }
 
 code {
-    font-size: large;
+    font-size: 1.4em;
 }
 
 p {
@@ -76,11 +76,10 @@ a:hover {
     bottom: 48px;
     right: 48px;
     display: none;
-    opacity: 0.7;
 }
 
 #backToTopButton:hover {
-    opacity: 1;
+    filter: brightness(130%);
     cursor: pointer;
 }
 
