@@ -6,6 +6,8 @@ Today I installed [Waterfox](https://www.waterfox.net/){:target="_blank"}. It co
 
 We have to go to /usr/share/applications/. In this location there is plenty of .desktop files for all the apps we already have in the application menu.
 
+<!--more-->
+
 > If you want to make the application available only for your user, go to ~/.local/share/applications/ instead. In my case, I don’t care because I’m the only user in my pc.
 
 Now, create a .desktop file with the name of the application you want to add. You can use gedit, nano, or the text editor you prefer. Firstly, we have to add [Desktop Entry] at the top of the file. Then, we have to add a series of keys with values:
