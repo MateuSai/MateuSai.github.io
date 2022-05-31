@@ -2,11 +2,11 @@
   link: /
 - name: Godot
   link: /godot.html
-- name: Ceramic
-  link: /ceramic.html
 - name: Flutter
   link: /flutter.html
 - name: Haxe
   link: /haxe.html
+- name: Other
+  link: /other.html
 - name: Memes
   link: /memes.html

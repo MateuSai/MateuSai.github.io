@@ -24,3 +24,8 @@ iframe {
 h1 {
     font-size: xx-large;
 }
+
+blockquote {
+    background-color: lighten($background-color, 13%);
+    padding: 2px 20px;
+}
