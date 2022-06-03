@@ -8,6 +8,11 @@ iframe {
     border: 2px solid black;
 }
 
+#odysee-iframe {
+    width: auto;
+    border: none;
+}
+
 #postNav {
     width: 100%;
     margin-top: 32px;
@@ -17,6 +22,7 @@ iframe {
 #postNav #prevTut {
     float: left;
 }
+
 #postNav #nextTut {
     float: right;
 }
