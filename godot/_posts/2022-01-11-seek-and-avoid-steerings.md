@@ -106,4 +106,9 @@ Play the game again and take a look, now, the character dodges the obstacles.
 
 ![avoid steering](/assets/images/godot/steering_behaviours/avoid_steering.gif)
 
-<iframe src="https://www.youtube.com/embed/71NIMTfaBKQ"></iframe>
+<br>
+
+<div id="tutorial-videos">
+	<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/steering-behaviors-in-godot-seek-and/f4bbc23760a3ff29e3fba9dc86f9c01eabeeb177?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+	<iframe id="youtube-iframe" src="https://www.youtube.com/embed/71NIMTfaBKQ" allowfullscreen></iframe>
+</div>

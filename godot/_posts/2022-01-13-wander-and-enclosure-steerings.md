@@ -124,4 +124,9 @@ Play the game one last time. The bro wanders around the map, but cannot exit the
 
 ![enclosure steering](/assets/images/godot/steering_behaviours/enclosure_steering.gif)
 
-<iframe src="https://www.youtube.com/embed/FmKJ9rnNMMc"></iframe>
+<br>
+
+<div id="tutorial-videos">
+    <iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/steering-behaviors-in-godot-wander-and/b9a84f8d4855b0402118dbbec84d153f6dd635cc?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+    <iframe id="youtube-iframe" src="https://www.youtube.com/embed/FmKJ9rnNMMc" allowfullscreen></iframe>
+</div>

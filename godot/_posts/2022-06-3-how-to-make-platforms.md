@@ -66,4 +66,7 @@ Let’s test it! Like before, the player can jump to a platform from below. But,
 
 <br>
 
-<iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/how-to-make-platforms-in-godot/6dc72484a191c3287d0786094eecc590357ea60a?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+<div id="tutorial-videos">
+    <iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/how-to-make-platforms-in-godot/6dc72484a191c3287d0786094eecc590357ea60a?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+    <iframe id="youtube-iframe" src="https://www.youtube.com/embed/LEfeACSHv6o" allowfullscreen></iframe>
+</div>

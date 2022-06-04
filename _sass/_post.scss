@@ -2,16 +2,18 @@
     font-size: medium;
 }
 
-iframe {
+#tutorial-videos-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#youtube-iframe {
     width: 100%;
     aspect-ratio: 16/9;
     border: 2px solid black;
 }
 
-#odysee-iframe {
-    width: auto;
-    border: none;
-}
+#odysee-iframe {}
 
 #postNav {
     width: 100%;

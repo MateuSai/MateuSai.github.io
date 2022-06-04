@@ -1,0 +1,5 @@
+--class-path assets/haxe
+
+-main PostPage
+
+-js assets/js/post.js

@@ -72,4 +72,9 @@ This is the final result:
 
 ![arrival steering](/assets/images/godot/steering_behaviours/arrival_steering.gif)
 
-<iframe src="https://www.youtube.com/embed/UauTCP933as"></iframe>
+<br>
+
+<div id="tutorial-videos">
+    <iframe id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/steering-behaviors-in-godot-arrival/6a1b56f1d2f44a01f2c7941b49c095ba8e138e94?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+    <iframe id="youtube-iframe" src="https://www.youtube.com/embed/UauTCP933as" allowfullscreen></iframe>
+</div>
