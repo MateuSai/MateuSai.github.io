@@ -13,7 +13,19 @@
     border: 2px solid black;
 }
 
-#odysee-iframe {}
+#odysee-iframe {
+    width: 100%;
+}
+
+button {
+    background-color: $accent-color;
+    padding: 5px;
+    font-size: 0.85em;
+}
+
+button:hover {
+    background-color: $accent-hover-color;
+}
 
 #postNav {
     width: 100%;

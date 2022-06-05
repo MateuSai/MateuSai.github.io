@@ -21,8 +21,7 @@ PostPage.main = function() {
 	}
 	var firstVideo = js_Boot.__cast(PostPage.tutorialVideos.firstElementChild , HTMLIFrameElement);
 	PostPage.firstVideoSrc = firstVideo.src;
-	PostPage.firstVideoWidth = firstVideo.width;
-	PostPage.firstVideoHeight = firstVideo.height;
+	firstVideo.height = Std.string(PostPage.tutorialVideos.parentElement.clientWidth * 0.5625);
 	var secondVideo = js_Boot.__cast(PostPage.tutorialVideos.lastElementChild , HTMLIFrameElement);
 	PostPage.secondVideoSrc = secondVideo.src;
 	secondVideo.remove();
@@ -55,8 +54,7 @@ PostPage.addVideo = function(tutorialVideo) {
 	if(tutorialVideo == TutorialVideo.Odysee) {
 		iframe.id = "odysee-iframe";
 		iframe.src = PostPage.firstVideoSrc;
-		iframe.width = PostPage.firstVideoWidth;
-		iframe.height = PostPage.firstVideoHeight;
+		iframe.height = Std.string(PostPage.tutorialVideos.parentElement.clientWidth * 0.5625);
 	} else {
 		iframe.id = "youtube-iframe";
 		iframe.src = PostPage.secondVideoSrc;

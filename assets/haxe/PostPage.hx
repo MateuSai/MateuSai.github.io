@@ -1,4 +1,3 @@
-import js.html.Document;
 import js.html.Element;
 import js.html.IFrameElement;
 import js.Browser;
@@ -12,9 +11,6 @@ class PostPage {
     static var tutorialVideos:Element;
 
     static var firstVideoSrc:String;
-    static var firstVideoWidth:String;
-    static var firstVideoHeight:String;
-
     static var secondVideoSrc:String;
 
     static var currentVideo:TutorialVideo = Odysee;
@@ -25,8 +21,8 @@ class PostPage {
 
         var firstVideo:IFrameElement = cast(tutorialVideos.firstElementChild, IFrameElement);
         firstVideoSrc = firstVideo.src;
-        firstVideoWidth = firstVideo.width;
-        firstVideoHeight = firstVideo.height;
+
+        firstVideo.height = Std.string(tutorialVideos.parentElement.clientWidth * (9/16));
 
         var secondVideo:IFrameElement = cast(tutorialVideos.lastElementChild, IFrameElement);
         secondVideoSrc = secondVideo.src;
@@ -70,8 +66,7 @@ class PostPage {
         if (tutorialVideo == Odysee) {
             iframe.id = "odysee-iframe";
             iframe.src = firstVideoSrc;
-            iframe.width = firstVideoWidth;
-            iframe.height = firstVideoHeight;
+            iframe.height = Std.string(tutorialVideos.parentElement.clientWidth * (9/16));
         } else {
             iframe.id = "youtube-iframe";
             iframe.src = secondVideoSrc;
