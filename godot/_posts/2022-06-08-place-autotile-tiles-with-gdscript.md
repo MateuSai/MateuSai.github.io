@@ -8,6 +8,8 @@ I have this autotile:
 
 Now, I want to set cells of the TileMap with tiles that are inside the autotile. The index of my autotile is 0. You can see the index at the side of the tile name:
 
+<!--more-->
+
 ![Autotile index](/assets/images/godot/place_autotile_tiles_with_gdscript/autotile_index.jpg)
 
 If we try to use
