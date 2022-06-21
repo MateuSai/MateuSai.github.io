@@ -1,26 +1,46 @@
 ---
 layout: default
 ---
-<article>
-    <h1>{{ page.title }}</h1>
-    <time id="postDate">{{ page.date | date_to_string }}</time>
-    <br>
-    <br>
+<div id="post-container">
+    <nav id="side-bar">
+        {% assign category = page.categories[0] %}
+        <h2>{{ category | capitalize }} tutorials</h2>
+        <ul>
+            {% for post in site.categories[category] %}
+            <li>
+                {% if post.post_id != page.post_id %}
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                {% else %}
+                {{post.title}}
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
 
-    {{ content }}
+    <hr>
 
-    <nav id="postNav">
-        {% for post in site.posts %}
-        {% if post.post_id == page.prev_tutorial %}
-        <a id="prevTut" href="{{ post.url }}">
-            Previous tutorial: {{ post.title }}
-        </a>
-        {% endif %}
-        {% if post.post_id == page.next_tutorial %}
-        <a id="nextTut" href="{{ post.url }}">
-            Next tutorial: {{ post.title }}
-        </a>
-        {% endif %}
-        {% endfor %}
-        <script src="/assets/js/post.js"></script>
-</article>
+    <article id="post-article">
+        <h1>{{ page.title }}</h1>
+        <time id="postDate">{{ page.date | date_to_string }}</time>
+        <br>
+        <br>
+
+        {{ content }}
+
+        <nav id="postNav">
+            {% for post in site.posts %}
+            {% if post.post_id == page.prev_tutorial %}
+            <a id="prevTut" href="{{ post.url }}">
+                Previous tutorial: {{ post.title }}
+            </a>
+            {% endif %}
+            {% if post.post_id == page.next_tutorial %}
+            <a id="nextTut" href="{{ post.url }}">
+                Next tutorial: {{ post.title }}
+            </a>
+            {% endif %}
+            {% endfor %}
+            <script src="/assets/js/post.js"></script>
+    </article>
+</div>

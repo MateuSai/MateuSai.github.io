@@ -14,7 +14,7 @@
         {% include top_nav.html %}
     </header>
 
-    <main>
+    <main id="{% if page.id %}post-main{% endif %}">
         {{ content }}
     </main>
 
