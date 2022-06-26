@@ -14,16 +14,16 @@ body {
 }
 
 main {
-    margin-right: 25vw;
-    margin-left: 25vw;
+    margin-right: $main-horizontal-margin;
+    margin-left: $main-horizontal-margin;
     padding: 16px;
     background-color: lighten($background-color, 7%);
     flex-grow: 1;
 }
 
 #post-main {
-    margin-right: 10vw;
-    margin-left: 10vw;
+    margin-right: $main-post-horizontal-margin;
+    margin-left: $main-post-horizontal-margin;
 }
 
 @media (max-aspect-ratio: 4/3) {
