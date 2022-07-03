@@ -7,7 +7,7 @@ While I was making the roguelike series, I found a few problems with the pathfin
 
 <!--more-->
 
-But befeore, I want to send special thanks to beasty for making [the art](https://senukahws.itch.io/grassanddirt){:target="_blank"}, thanks bro!
+But before, I want to send special thanks to beasty for making [the art](https://senukahws.itch.io/grassanddirt){:target="_blank"}, thanks bro!
 
 We will start with the seek behaviour, the most simple. We will apply a force to move the velocity vector to face the target position. Open your character script and add a new Vector2  variable called velocity and store the maximum velocity of the character in a variable with the name “max_speed”. Also, store the maximum steering in a variable too, it has to be small because we will be adding the steering to the velocity every frame.
 

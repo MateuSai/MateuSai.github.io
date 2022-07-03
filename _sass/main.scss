@@ -27,9 +27,16 @@ main {
 }
 
 @media (max-aspect-ratio: 4/3) {
-    main {
+
+    main,
+    #post-main {
         margin-right: 0;
         margin-left: 0;
+    }
+
+    #side-bar,
+    #post-container>hr {
+        display: none;
     }
 }
 
@@ -92,6 +99,22 @@ a:hover {
     display: block;
 }
 
+iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+button {
+    background-color: $accent-color;
+    padding: 5px;
+    font-size: 0.85em;
+}
+
+button:hover {
+    background-color: $accent-hover-color;
+}
+
 @import "top_nav";
 @import "post";
-@import "footer"
+@import "footer";
+@import "portfolio";
