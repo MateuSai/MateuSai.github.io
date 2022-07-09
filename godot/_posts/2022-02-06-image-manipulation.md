@@ -34,7 +34,6 @@ func _init() -> void:
 
 Now, we are ready to start modifying the images.
 
-<br>
 
 ## Crop
 
@@ -52,7 +51,6 @@ Note that I used the get_width function to get the width of the image in pixels.
 
 ![cropped cat](/assets/images/godot/image_manipulation/cropped_cat.jpg)
 
-<br>
 
 ## Using blit_rect
 
@@ -111,7 +109,6 @@ I reduced the size of the godot image to half with the shrink_x2 function. The i
 
 As you can see, the pixels around the godot image have disappeared. blit_rect **overrides** all the pixels below the image, the pixels around the godot icon with an alpha of 0 (completely transparent) take the place of the pixels below them.
 
-<br>
 
 ## Using blend_rect
 

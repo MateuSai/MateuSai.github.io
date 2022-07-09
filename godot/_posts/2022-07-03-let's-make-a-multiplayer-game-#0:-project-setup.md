@@ -1,5 +1,6 @@
 ---
 post_id: multiplayer_game_0
+next_tutorial: multiplayer_game_1
 ---
 
 In this new series we are going to make a multiplayer game from scratch using the Godot game engine. The final result will be that:
@@ -35,3 +36,8 @@ With that, we are ready to start making the basic playable game in the next tuto
 > Just make sure your characters inherit from a scene with only the basics components: a collision shape, an animation player, and a Sprite.
 
 ![Game scene](/assets/images/godot/multiplayer_game/0/game_scene.jpg)
+
+<div id="tutorial-videos">
+    <iframe id="odysee-iframe" src="https://odysee.com/$/embed/let%27s-make-a-godot-multiplayer-game-0/23d08959f3d9b7f9aa645370d258d62988c62ec6?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+    <iframe id="youtube-iframe" src="https://www.youtube.com/embed/SVPlbMjtJ6Y" allowfullscreen></iframe>
+</div>

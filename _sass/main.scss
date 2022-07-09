@@ -1,5 +1,9 @@
 @import "themes/default";
 
+* {
+    font-size: 1em;
+}
+
 html {
     height: 100%;
 }
@@ -40,6 +44,23 @@ main {
     }
 }
 
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    margin-top: 55px;
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
 img {
     object-fit: cover;
     max-width: 100%;
@@ -52,11 +73,7 @@ pre {
 }
 
 code {
-    font-size: 1.4em;
-}
-
-p {
-    font-size: larger;
+    font-size: 1.3em;
 }
 
 a {
@@ -117,3 +134,4 @@ button:hover {
 @import "top_nav";
 @import "post";
 @import "footer";
+@import "portfolio";

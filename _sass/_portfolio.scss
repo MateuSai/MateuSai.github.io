@@ -1,0 +1,47 @@
+#games-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#games-container>* {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#games-container>div>div {
+    width: 100%;
+}
+
+.next-button,
+.previous-button {
+    font-size: 1.5em;
+    height: fit-content;
+}
+
+.previous-button {
+    transform: scale(-1, 1);
+}
+
+#change-game-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#game-placeholder {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: lighten($background-color, 13%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-placeholder>p {
+    margin: 16px;
+}

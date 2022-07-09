@@ -1,5 +1,11 @@
 --class-path assets/haxe
 
--main PostPage
+--each
 
--js assets/js/post.js
+--main PostPage
+--js assets/js/post.js
+
+--next
+
+--main Portfolio
+--js assets/js/portfolio.js
