@@ -15,7 +15,7 @@ Create a new TileMap scene, change the name to “map” and save it. In my case
 
 Now, create a new TileSet for the TileMap and open it. Load the tileset image. Enable the tile snap option and create a new tile. After that, the “Snap Options” dropdown appears at the right. Click it and change the step to 8 pixels, since that’s the size of the tiles we are using.
 
-Now, create all the tiles you need. I’m going to pass this part fast because it’s very repetitive. Don’t forget to add collisions too. We are finished with the tileset. If you want you can add more TileMap for decorations and platforms. I will not show it in the tutorial because it’s the same process as the TileMap we just configured.
+Now, create all the tiles you need. I’m going to pass this part fast because it’s very repetitive. Don’t forget to add collisions too. We are finished with the tileset. If you want you can add more TileMap nodesscene for decorations and platforms. I will not show it in the tutorial because it’s the same process as the TileMap we just configured.
 
 ![Tileset](/assets/images/godot/multiplayer_game/1/tileset.jpg)
 
@@ -234,3 +234,8 @@ Let’s test the movement. Open the game scene and instance the player scene. Pl
 ![Final result](/assets/images/godot/multiplayer_game/1/final_result.gif)
 
 That’s it for this tutorial. In the next one we are going to implement the state machine and the hitbox. Meanwhile, you can try to add platforms to the game. I already did a video about it, so I’m not going to repeat the same. Or you could try to implement the state machine yourself, the best way to learn is through practice.
+
+<div id="tutorial-videos">
+    <iframe id="odysee-iframe" src="https://odysee.com/$/embed/let%27s-make-a-godot-multiplayer-game-1/0f963b1047140f89004812f965fd9cabee9396a9?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+    <iframe id="youtube-iframe" src="https://www.youtube.com/embed/Wix8jbfp6lo" allowfullscreen></iframe>
+</div>
