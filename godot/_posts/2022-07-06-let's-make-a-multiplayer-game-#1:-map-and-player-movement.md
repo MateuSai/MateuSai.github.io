@@ -1,6 +1,7 @@
 ---
 post_id: multiplayer_game_1
 prev_tutorial: multiplayer_game_0
+next_tutorial: multiplayer_game_2
 ---
 
 In this tutorial we are going to make the map and the player movement. Without further delay, let’s get started.
