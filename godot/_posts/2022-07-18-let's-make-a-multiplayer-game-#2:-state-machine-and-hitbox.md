@@ -1,6 +1,7 @@
 ---
 post_id: multiplayer_game_2
 prev_tutorial: multiplayer_game_1
+next_tutorial: multiplayer_game_3
 ---
 
 In this tutorial we are going to make the state machine and the hitbox. As you will see, I implemented the platforms. I’m not going to show it in the tutorial, if you are interested check [my tutorial about platforms](https://mateusai.github.io/godot/2022/06/03/how-to-make-platforms.html). But, anyway, the platforms don’t affect the rest of the game at all, so, it’s not necessary to add them. Let’s start implementing the state machine.
@@ -141,7 +142,7 @@ func _on_Hitbox_body_entered(body: Node) -> void:
         body.damage(1)
 {% endhighlight %}
 
-To test the hitbox, print the name of the player who entered the hitbox. We cannot test it visually yet because the BaseCharacter does not have a state machine, so we could not tell when it dies, and we can’t instance another Player, since it would use the same keys to move an attack as our player. So until we implement the online part, the only way to see if the hitbox work is using a debug message.
+To test the hitbox, print the name of the player who entered the hitbox. We cannot test it visually yet because the BaseCharacter does not have a state machine, so we could not tell when it dies, and we can’t instance another Player, since it would use the same keys to move and attack as our player. So until we implement the online part, the only way to see if the hitbox work is using a debug message.
 
 Let’s test it. Add a BaseCharacter somewhere in the game. To see when the hitbox is enabled, enable the “Visible Collision Shapes” option in the debug options.
 
@@ -156,3 +157,9 @@ Try to attack. We can see that the hitbox is enabled when we attack. In the outp
 ## End
 
 With that, we have the basic gameplay done. From now on, I will focus on networking, if you want, you can try to improve the gameplay on your own. In the next tutorial, I will start making the menu where the players will be able to create or chose a room to join.
+
+
+<div id="tutorial-videos">
+    <iframe id="odysee-iframe" src="https://odysee.com/$/embed/let%27s-make-a-godot-multiplayer-game-2/440b29282727b8cc31a68447a9d42d79c7dcb546?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+    <iframe id="youtube-iframe" src="https://www.youtube.com/embed/GQfgXfLl968" allowfullscreen></iframe>
+</div>
