@@ -44,6 +44,12 @@ main {
     }
 }
 
+.two-columns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+}
+
 h1 {
     font-size: 2em;
 }

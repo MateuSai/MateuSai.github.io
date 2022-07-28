@@ -5,6 +5,8 @@ prev_tutorial: multiplayer_game_2
 
 In this tutorial we are going to start making the menu and handle the connections. Let’s get started.
 
+<!--more-->
+
 
 ## Client
 ### Menu
@@ -21,7 +23,7 @@ Add some title for the AcceptDialog. “Waiting for players…” seems fine to 
 
 ![Create AcceptDialog](/assets/images/godot/multiplayer_game/3/create_dialog.jpg)
 
-I want to show a list of the connected players in this window. Since there can be a lot of connected players, add a ScrollContainer. The ScrollContainer will allow us to scroll and see all the players when they overflow the window. The players will be represented in a vertical line, so we don’t need the horizontal scroll, disable it.
+I want to show a list of the connected players in this window. Since there can be a lot of connected players, add a ScrollContainer. The ScrollContainer will allow us to scroll and see all the players when they overflow the window. The players will be represented in a vertical line, so we don’t need the horizontal scroll.
 
 ![Disable horizontal scroll](/assets/images/godot/multiplayer_game/3/disable_h_scroll.jpg)
 
@@ -50,12 +52,14 @@ func _on_CreateButton_pressed() -> void:
 
 {% endhighlight %}
 
-Let’s try it. To make the menu scene the main scene, click the play button and click ‘Select Current’. In the previous videos, I used the ‘Play Scene’ button because I didn’t want to change the main scene yet. So, if you press the create button, the popup will appear. It does not connect to the server yet, that’s what we are going to implement now.
+Let’s try it. To make the menu scene the main scene, click the play button and click ‘Select Current’. So, if you press the create button, the popup will appear. It does not connect to the server yet, that’s what we are going to implement now.
 
 
 ### Client autoload
 
-Create a script called “Client” and save it. Since we need access to this script all the time, also when we are in the game scene, define the script as an autoload. At the start of the script, add 2 constants. I name the first constant “SERVER_ADDRESS” and it contains the address of the server. The best way to test the networking is using the localhost address, “127.0.0.1”. This is a special address that connects with our own computer. It allows us to test the game without uploading the code to any real server. The second constant contains the port the server is listening to. I choose 5466 because this port is free in my computer. If you are using Linux, you can see a list with the assigned ports in /etc/services, it’s better if you don’t pick any port that is in the list, since they already have other services assigned to them.
+Create a script called “Client” and save it. Since we need access to this script all the time, also when we are in the game scene, define the script as an autoload. At the start of the script, add 2 constants. I name the first constant “SERVER_ADDRESS” and it contains the address of the server. The best way to test the networking is using the localhost address, “127.0.0.1”. This is a special address that connects with our own computer. It allows us to test the game without uploading the code to any real server. The second constant contains the port the server is listening to. I choose 5466 because this port is free in my computer.
+
+> If you are using Linux, you can see a list with the assigned ports in /etc/services, it’s better if you don’t pick any port that is in the list, since they already have other services assigned to them.
 
 {% highlight gdscript %}
 extends Node
@@ -86,7 +90,7 @@ var is_creator: bool = false
 var room: int
 {% endhighlight %}
 
-To connect to the server, create a function called “connect_to_server” with an integer parameter that contains the room the players want to connect to. The default value of the parameter is 0, if we create the room, we won’t use the parameter. Assign the parameter to the room variable. Next, create a new instance of the class NetworkMultiplayerENet. We can connect to the server using the create_client function of this class. We have to specify the address and the port of the server. Use the constants we created before. create_client can fail, in that case I print an error message with the printerr function. Assign the  NetworkMultiplayerENet instance to the network peer of the tree, so the connection will remain active while the game is running.
+To connect to the server, create a function called “connect_to_server” with an integer parameter that contains the room the players want to connect to. The default value of the parameter is 0, if we create the room, we won’t use the parameter. Assign the parameter to the room variable. Next, create a new instance of the class `NetworkedMultiplayerENet`. We can connect to the server using the create_client function of this class. We have to specify the address and the port of the server. Use the constants we created before. create_client can fail, in that case I print an error message with the printerr function. Assign the  `NetworkedMultiplayerENet` instance to the network peer of the tree, so the connection will remain active while the game is running.
 
 At the end of the function, connect the signals to monitor the connection. “connected_to_server” will be emitted when we connect successfully with the server. "connection_failed" will be emitted if the connection failed. Maybe because the address is wrong, the port is incorrect, or the server is not running. "server_disconnected" will be emitted when the server closes the connection. The connect function can return an error if it fails, so I use ifs to print an error message in that case. If you don’t handle the return value of connect, you will have warnings. If you don’t want to put all these ifs, you can ignore the warnings, you will get an error anyway if the connection fails.
 
@@ -124,7 +128,7 @@ func _server_disconnected() -> void:
     print("Server disconnected!")
 {% endhighlight %}
 
-Create a new function called “create_room”. Inside the function change is_creator to true and call the connect_to_server function, we don’t specify the room_id argument because we are creating a room, not joining one. I forgot to put a default value for the argument, put 0 as his default value.
+Create a new function called “create_room”. Inside the function change is_creator to true and call the connect_to_server function, we don’t specify the room_id argument because we are creating a room, not joining one.
 
 {% highlight gdscript %}
 func create_room() -> void:
@@ -172,7 +176,7 @@ var empty_rooms: Array = []
 enum { WAITING, STARTED }
 {% endhighlight %}
 
-Let’s initialize the server in the _ready function. Create a new instance of NetworkedMultiplayerENet and call his create_server function. The first argument is the port. The second argument represents the number of players who can connect to the server simultaneously. The default value is 32, that’s more than enough for the project, so I’m not going to specify a different value. As with the create_client function, create_server can fail. If it fails I print an error message and I stop the server. If the server does not even start, it’s senseless to continue executing the project. After that, assign the instance of NetworkedMultiplayerENet to the network_peer of the scene tree.
+Let’s initialize the server in the _ready function. Create a new instance of `NetworkedMultiplayerENet` and call his create_server function. The first argument is the port. The second argument represents the number of players who can connect to the server simultaneously. The default value is 32, that’s more than enough for the project, so I’m not going to specify a different value. As with the create_client function, create_server can fail. If it fails I print an error message and I stop the server. If the server does not even start, it’s senseless to continue executing the project. After that, assign the instance of `NetworkedMultiplayerENet` to the network_peer of the scene tree.
 
 Next, connect 2 signals. “network_peer_connected” will be emitted when a client connects, and “network_peer_disconnected” will be emitted when a client disconnects. As with the Client signals, if the connection fails, I print an error message. But, in this case, if they fail, I stop the server because without these 2 signals the server cannot work normally.
 
@@ -224,11 +228,11 @@ func _connected_ok() -> void:
         rpc_id(1, "create_room", my_info)
 {% endhighlight %}
 
-Now, go to the server project and create the function, otherwise we won’t be able to call it. We have to add `remote` before the function declaration. The remote keyword allows the function to be called remotely, without `remote`, we would not be able to call the function from the client.
+Now, go to the server project and create the function, otherwise we won’t be able to call it. We have to add `remote` before the function declaration. The `remote` keyword allows the function to be called remotely, without `remote`, we would not be able to call the function from the client.
 
-Inside the function, print a message indicating the room has been created. To get the id of the client who called the function, we can use the get_rpc_sender_id() function of the scene tree.
+Inside the function, print a message indicating the room has been created. To get the id of the client who called the function, we can use the `get_rpc_sender_id()` function of the scene tree.
 
-Next, create a variable called room_id. If the array of empty rooms is empty, assign the value of next_room_id to the variable and increase next_room_id by one. If the array of empty rooms is not empty, we pick the last closed room using the pop_back() function.
+Next, create a variable called room_id. If the array of empty rooms is empty, assign the value of `next_room_id` to the variable and increase `next_room_id` by one. If the array of empty rooms is not empty, we pick the last closed room using the `pop_back()` function.
 
 Now that we have the id of the room, let’s create an entry in the rooms dictionary. The key is the id of the room. Save the id of the player who created the room, the one who called the function. We will also store a dictionary with all the players information, initialize it to an empty dictionary. Also, add players_done to keep track of the players who are ready to start the game. And, finally, store the state of the room. The initial state is `WAITING`, since when the function is called, the client is in the menu and the game has not started yet. At the end of the function, call the _add_player_to_room function. We are going to create the function in a moment. The first argument is the id of the room, the second argument is the id of the player we want to add, and the third argument is the information of the player.
 
@@ -293,7 +297,7 @@ If you try to connect to the server now, you should see some errors.
 
 ![Errors](/assets/images/godot/multiplayer_game/3/errors.jpg)
 
-We can see that Godot is complaining about not finding the Client node. But why is he looking for the Client node in the server? Let me explain it. Godot only let’s us communicate between nodes that are in the same position in the scene tree in both projects. When we call functions from the script in the Client node of the client project, he expects to find the same node in the server. ¯\_(ツ)_/¯. So, just change the name of the Server node to Client and they will be able to communicate because now they have the same name and the same position in the scene tree.
+We can see that Godot is complaining about not finding the Client node. But why is he looking for the Client node in the server? Let me explain it. Godot only let’s us communicate between nodes that are in the same position in the scene tree in both projects. When we call functions from the script in the Client node of the client project, he expects to find the same node in the server. ¯\_(ツ)_/¯. So, just change the name of the Server node to "Client" and they will be able to communicate because now they have the same name and the same position in the scene tree.
 
 ![Server with client name](/assets/images/godot/multiplayer_game/3/server_with_client_name.jpg)
 
@@ -305,3 +309,10 @@ Let’s try it one last time. Now, when the client connects, the server sends th
 I know all of this could seem complex at the start. For that reason, let’s end the tutorial with an image that summarizes the process.
 
 ![Summary](/assets/images/godot/multiplayer_game/3/summary.jpg)
+
+
+## References
+* [Godot docs](https://docs.godotengine.org/en/stable/tutorials/networking/high_level_multiplayer.html){:target="_blank"}
+* [Exporting for dedicate servers](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_dedicated_servers.html#doc-exporting-for-dedicated-servers){:target="_blank"}
+* [Download headless version of Godot](https://godotengine.org/download/server){:target="_blank"}
+* [Run headless server](https://godotengine.org/qa/11251/how-to-export-the-project-for-server){:target="_blank"}
