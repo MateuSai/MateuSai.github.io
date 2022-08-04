@@ -1,6 +1,7 @@
 ---
 post_id: multiplayer_game_3
 prev_tutorial: multiplayer_game_2
+next_tutorial: multiplayer_game_4
 ---
 
 In this tutorial we are going to start making the menu and handle the connections. Let’s get started.
@@ -316,3 +317,9 @@ I know all of this could seem complex at the start. For that reason, let’s end
 * [Exporting for dedicate servers](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_dedicated_servers.html#doc-exporting-for-dedicated-servers){:target="_blank"}
 * [Download headless version of Godot](https://godotengine.org/download/server){:target="_blank"}
 * [Run headless server](https://godotengine.org/qa/11251/how-to-export-the-project-for-server){:target="_blank"}
+
+
+<div id="tutorial-videos">
+    <iframe id="odysee-iframe" src="https://odysee.com/$/embed/let%27s-make-a-godot-multiplayer-game-3/4e624a785c5d8372e3888b4fa04ea7f0a1fa7564?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+    <iframe id="youtube-iframe" src="https://www.youtube.com/embed/oHvoYOcCfjE" allowfullscreen></iframe>
+</div>
