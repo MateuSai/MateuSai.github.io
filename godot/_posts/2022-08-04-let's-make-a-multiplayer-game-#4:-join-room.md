@@ -1,6 +1,7 @@
 ---
 post_id: multiplayer_game_4
 prev_tutorial: multiplayer_game_3
+next_tutorial: multiplayer_game_5
 ---
 
 In the last tutorial we made the client create a room. In this one, we are going to make the clients able to join a room created by another client. Let’s get started.
@@ -193,3 +194,9 @@ That’s all for today. In the next tutorial we will handle the disconnections a
 * [Exporting for dedicate servers](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_dedicated_servers.html#doc-exporting-for-dedicated-servers){:target="_blank"}
 * [Download headless version of Godot](https://godotengine.org/download/server){:target="_blank"}
 * [Run headless server](https://godotengine.org/qa/11251/how-to-export-the-project-for-server){:target="_blank"}
+
+
+<div id="tutorial-videos">
+    <iframe id="odysee-iframe" src="https://odysee.com/$/embed/let%27s-make-a-godot-multiplayer-game-4/6b780b2deb112b828ffb42af79a555658aec9971?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+    <iframe id="youtube-iframe" src="https://www.youtube.com/embed/1YppgViOEvs" allowfullscreen></iframe>
+</div>
