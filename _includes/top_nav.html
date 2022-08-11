@@ -1,7 +1,14 @@
 <nav id="topNav">
-    {% for item in site.data.top_navigation %}
-    <a href="{{ item.link }}" {% if page.url==item.link %}class="currentPage" {% endif %}>
-        {{ item.name }}
-    </a>
-    {% endfor %}
+    <ul>
+        {% for item in site.data.top_navigation %}
+        <li {% if page.url==item.link %}class="currentPage" {% endif %}>
+            <a href="{{ item.link }}">
+                {% if item.icon != null %}
+                <img src={{ item.icon }} alt="Category icon">
+                {% endif %}
+                {{ item.name }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
 </nav>

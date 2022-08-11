@@ -2,6 +2,7 @@
 post_id: multiplayer_game_2
 prev_tutorial: multiplayer_game_1
 next_tutorial: multiplayer_game_3
+discard_start: "Let's Make A Multiplayer Game #2:"
 ---
 
 In this tutorial we are going to make the state machine and the hitbox. As you will see, I implemented the platforms. I’m not going to show it in the tutorial, if you are interested check [my tutorial about platforms](https://mateusai.github.io/godot/2022/06/03/how-to-make-platforms.html). But, anyway, the platforms don’t affect the rest of the game at all, so, it’s not necessary to add them. Let’s start implementing the state machine.

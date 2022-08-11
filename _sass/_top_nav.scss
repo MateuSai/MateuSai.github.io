@@ -5,20 +5,34 @@
     background-color: $accent-color;
 }
 
+#topNav>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 #topNav .currentPage {
     background-color: darken($accent-color, 7%);
 }
 
-#topNav a {
+#topNav>ul>li {}
+
+
+
+#topNav li {
     color: $text-color;
     float: left;
     padding: 10px;
     height: 100%;
     font-size: 1.5em;
-    text-decoration: none;
 }
 
-#topNav a:hover {
+#topNav li:hover {
     color: $text-color;
     background-color: $accent-hover-color;
+}
+
+#topNav a {
+    color: inherit;
+    text-decoration: none;
 }

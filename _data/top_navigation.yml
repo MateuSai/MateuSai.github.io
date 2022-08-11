@@ -1,12 +1,18 @@
 - name: Home
   link: /
+  icon: null
 - name: Godot
   link: /godot.html
+  icon: /assets/images/logos/godot.svg
 - name: Flutter
   link: /flutter.html
+  icon: /assets/images/logos/flutter.svg
 - name: Haxe
   link: /haxe.html
+  icon: /assets/images/logos/haxe.svg
 - name: Other
   link: /other.html
+  icon: null
 - name: Memes
   link: /memes.html
+  icon: null

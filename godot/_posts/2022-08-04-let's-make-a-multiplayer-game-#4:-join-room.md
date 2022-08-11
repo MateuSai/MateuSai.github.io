@@ -2,6 +2,7 @@
 post_id: multiplayer_game_4
 prev_tutorial: multiplayer_game_3
 next_tutorial: multiplayer_game_5
+discard_start: "Let's Make A Multiplayer Game #4:"
 ---
 
 In the last tutorial we made the client create a room. In this one, we are going to make the clients able to join a room created by another client. Let’s get started.
