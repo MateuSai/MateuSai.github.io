@@ -1,17 +1,18 @@
 ---
 post_id: multiplayer_game_5
 prev_tutorial: multiplayer_game_4
+next_tutorial: multiplayer_game_6
 discard_start: "Let's Make A Multiplayer Game #5:"
 ---
 
 In this tutorial we are going to implement the list of the players and handle the disconnections.
 
+<!--more-->
+
 
 ## Register players
 
 Let’s start with the server project. When a client connects we have to send all the information of the players to him and send the information of the new player to the other ones. To add a player to a room, we use the `_add_player_to_room` function, that’s the perfect place to send the information to the newly joined player.
-
-<!--more-->
 
 {% highlight gdscript %}
 # Server.gd
@@ -271,3 +272,9 @@ It all works now. In the next tutorial we will make the transition to the game s
 * [Exporting for dedicate servers](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_dedicated_servers.html#doc-exporting-for-dedicated-servers){:target="_blank"}
 * [Download headless version of Godot](https://godotengine.org/download/server){:target="_blank"}
 * [Run headless server](https://godotengine.org/qa/11251/how-to-export-the-project-for-server){:target="_blank"}
+
+
+<div id="tutorial-videos">
+    <iframe id="odysee-iframe" src="https://odysee.com/$/embed/let%27s-make-a-godot-multiplayer-game-5/d381b6c656707e67633d06adaff6d787bc7d8857?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+    <iframe id="youtube-iframe" src="https://www.youtube.com/embed/QX0gsMcMmmo" allowfullscreen></iframe>
+</div>
