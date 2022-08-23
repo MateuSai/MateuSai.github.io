@@ -99,7 +99,9 @@ Open 2 clients and start a game. As we can see, the player position gets synchro
 
 ## Synchronize flip_h and animation
 
-Go to the player script and add 2 new signals. `flip_h_changed` with an argument with the new value of the `flip_h` property, and `animation_changed` with an argument containing the name of the new animation.
+Go to the player script and add 2 new signals:
+* `flip_h_changed` with an argument with the new value of the `flip_h` property
+* `animation_changed` with an argument containing the name of the new animation.
 
 {% highlight gdscript %}
 # Player.gd
@@ -119,7 +121,7 @@ func _flip() -> void:
     emit_signal("flip_h_changed", sprite.flip_h)
 {% endhighlight %}
 
-As for the `animation_changed` signal, the `AnimatedPlayer` has a signal that will be emitted when the animation changes. Connect the `animation_started` signal to the script. Inside the function connected to the `animation_started` signal, emit our `animation_changed` signal. Pass the name of the new animation as argument.
+As for the `animation_changed` signal, the `AnimationPlayer` has a signal that will be emitted when the animation changes. Connect the `animation_started` signal to the script. Inside the function connected to the `animation_started` signal, emit our `animation_changed` signal. Pass the name of the new animation as argument.
 
 > Don’t confuse the `animation_started` signal with the `animation_changed` signal. The last one is emitted when a queued animation plays, we don’t queue animations, so this signal will never be emitted.
 
