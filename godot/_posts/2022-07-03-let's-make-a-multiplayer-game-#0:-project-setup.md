@@ -2,6 +2,8 @@
 post_id: multiplayer_game_0
 next_tutorial: multiplayer_game_1
 discard_start: "Let's Make A Multiplayer Game #0:"
+
+thumbnail: "/assets/images/godot/multiplayer_game/0/thumbnail.jpg"
 ---
 
 In this new series we are going to make a multiplayer game from scratch using the Godot game engine. The final result will be that:

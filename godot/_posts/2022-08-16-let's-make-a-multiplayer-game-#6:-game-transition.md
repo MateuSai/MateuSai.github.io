@@ -3,6 +3,8 @@ post_id: multiplayer_game_6
 prev_tutorial: multiplayer_game_5
 next_tutorial: multiplayer_game_7
 discard_start: "Let's Make A Multiplayer Game #6:"
+
+thumbnail: "/assets/images/godot/multiplayer_game/6/thumbnail.jpg"
 ---
 
 In this tutorial we are going to make the transition to the game scene. But, first, I would like to fix a bug with the last tutorial.

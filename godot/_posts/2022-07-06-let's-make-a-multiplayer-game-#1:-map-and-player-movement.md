@@ -3,6 +3,8 @@ post_id: multiplayer_game_1
 prev_tutorial: multiplayer_game_0
 next_tutorial: multiplayer_game_2
 discard_start: "Let's Make A Multiplayer Game #1:"
+
+thumbnail: "/assets/images/godot/multiplayer_game/1/thumbnail.jpg"
 ---
 
 In this tutorial we are going to make the map and the player movement. Without further delay, let’s get started.

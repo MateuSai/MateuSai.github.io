@@ -3,6 +3,8 @@ post_id: multiplayer_game_5
 prev_tutorial: multiplayer_game_4
 next_tutorial: multiplayer_game_6
 discard_start: "Let's Make A Multiplayer Game #5:"
+
+thumbnail: "/assets/images/godot/multiplayer_game/5/thumbnail.jpg"
 ---
 
 In this tutorial we are going to implement the list of the players and handle the disconnections.

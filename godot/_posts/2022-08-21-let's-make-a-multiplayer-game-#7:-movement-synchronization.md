@@ -3,6 +3,8 @@ post_id: multiplayer_game_7
 prev_tutorial: multiplayer_game_6
 next_tutorial: multiplayer_game_8
 discard_start: "Let's Make A Multiplayer Game #7:"
+
+thumbnail: "/assets/images/godot/multiplayer_game/7/thumbnail.jpg"
 ---
 
 In this tutorial, we are going to synchronize the player position, as well as his animation, between all the clients. We will also synchronize the flip_h property of the player, so when a client is facing the left, it will be facing the left in all the clients. Let’s get started.

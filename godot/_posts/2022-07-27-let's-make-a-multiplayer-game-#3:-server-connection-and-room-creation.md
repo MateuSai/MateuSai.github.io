@@ -3,6 +3,8 @@ post_id: multiplayer_game_3
 prev_tutorial: multiplayer_game_2
 next_tutorial: multiplayer_game_4
 discard_start: "Let's Make A Multiplayer Game #3:"
+
+thumbnail: "/assets/images/godot/multiplayer_game/3/thumbnail.jpg"
 ---
 
 In this tutorial we are going to start making the menu and handle the connections. Let’s get started.

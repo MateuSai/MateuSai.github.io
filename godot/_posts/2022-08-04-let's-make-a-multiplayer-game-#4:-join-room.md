@@ -3,14 +3,16 @@ post_id: multiplayer_game_4
 prev_tutorial: multiplayer_game_3
 next_tutorial: multiplayer_game_5
 discard_start: "Let's Make A Multiplayer Game #4:"
+
+thumbnail: "/assets/images/godot/multiplayer_game/4/thumbnail.jpg"
 ---
 
 In the last tutorial we made the client create a room. In this one, we are going to make the clients able to join a room created by another client. Let’s get started.
 
+<!--more-->
+
 
 From now on, I won’t show the server when we run the client, but I will have it running in another workspace. When the player presses the create button, he will connect to the server. But, what happens if you close the popup window? We will still be connected and, if we try to connect again, we will get a bunch of errors. We want to disconnect when the window is closed. For that purpose, let’s make a function that stops the connections.
-
-<!--more-->
 
 ![Error when trying to connect more than one time](/assets/images/godot/multiplayer_game/4/error_connecting_more_than_one_time.gif)
 

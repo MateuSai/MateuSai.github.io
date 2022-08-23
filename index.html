@@ -10,6 +10,10 @@ title: Home
   <article class="postPeek">
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 
+    {% if post.thumbnail %}
+    <img src="{{ post.thumbnail }}" alt="thumbnail">
+    {% endif %}
+
     {{ post.excerpt }}
 
   </article>
