@@ -286,3 +286,9 @@ That’s all for today. At this point we already have a playable game, but all t
 * [Exporting for dedicate servers](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_dedicated_servers.html#doc-exporting-for-dedicated-servers){:target="_blank"}
 * [Download headless version of Godot](https://godotengine.org/download/server){:target="_blank"}
 * [Run headless server](https://godotengine.org/qa/11251/how-to-export-the-project-for-server){:target="_blank"}
+
+
+<div id="tutorial-videos">
+    <iframe id="odysee-iframe" src="https://odysee.com/$/embed/let%27s-make-a-godot-multiplayer-game-8/018aaacb8573968f754ecc2be66329e782782c50?r=5dDZJPgbdny6EiKLsWtNXNwnM936b7gf" allowfullscreen></iframe>
+    <iframe id="youtube-iframe" src="https://www.youtube.com/embed/pygWv2kzscc" allowfullscreen></iframe>
+</div>
