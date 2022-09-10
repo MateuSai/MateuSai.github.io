@@ -9,6 +9,8 @@ thumbnail: "/assets/images/godot/multiplayer_game/9/thumbnail.jpg"
 
 In this tutorial we are going to make a character selector. After the tutorial, you will be able to chose a texture and a name for your character.
 
+<!--more-->
+
 
 In the menu scene, add a new `WindowDialog` node. Set the title to "Character selector" or something like that. This node will contain the options to customize our character.
 
