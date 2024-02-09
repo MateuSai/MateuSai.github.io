@@ -59,3 +59,16 @@ blockquote {
 video {
     width: 100%;
 }
+
+#tags-list {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+
+    li {
+        padding: 4px;
+        border-radius: 3px;
+        list-style: none;
+        background: $accent-color;
+    }
+}

@@ -1,5 +1,7 @@
 ---
 post_id: image_manipulation
+last_updated: 2024-02-09
+tags: ["Godot 4.x"]
 ---
 
 Hey bros, I was making a random character generated and I needed to manipulate textures. You know, cropping an image, putting one image on top of another, these things. I couldn’t find any tutorial about it, so I will make one myself.
@@ -105,7 +107,7 @@ texture = image_texture
 
 ![cat with godot face (blit_rect)](/assets/images/godot/image_manipulation/cat_with_godot_face_(blit_rect).jpg)
 
-I reduced the size of the godot image to half with the shrink_x2 function. The images can’t be merged if their format is different. For that reason, I converted the cat image to the godot image format (to png).
+I reduced the size of the godot image to half with the shrink_x2 function. The images can’t be merged if their format is different. For that reason, I converted the cat image to the godot image format.
 
 As you can see, the pixels around the godot image have disappeared. blit_rect **overrides** all the pixels below the image, the pixels around the godot icon with an alpha of 0 (completely transparent) take the place of the pixels below them.
 
