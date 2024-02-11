@@ -1,7 +1,7 @@
 ---
 post_id: image_manipulation
 last_updated: 2024-02-09
-tags: ["Godot 4.x"]
+tags: [Godot 4.x, Godot 3.x]
 ---
 
 Hey bros, I was making a random character generated and I needed to manipulate textures. You know, cropping an image, putting one image on top of another, these things. I couldn’t find any tutorial about it, so I will make one myself.
