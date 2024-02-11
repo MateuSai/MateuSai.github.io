@@ -1,5 +1,6 @@
 ---
 post_id: multiplayer_game_8
+tags: [Godot 3.x]
 prev_tutorial: multiplayer_game_7
 next_tutorial: multiplayer_game_9
 discard_start: "Let's Make A Multiplayer Game #8:"

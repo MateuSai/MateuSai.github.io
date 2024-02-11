@@ -35,7 +35,7 @@
     border: 2px solid black;
 }
 
-#odysee-iframe {}
+/* #odysee-iframe {} */
 
 #postNav {
     width: 100%;
@@ -71,5 +71,13 @@ video {
         border-radius: 3px;
         list-style: none;
         background: $accent-color;
+
+        a {
+            color: darkblue;
+        }
+
+        a:hover {
+            color: $link-hover-color;
+        }
     }
 }

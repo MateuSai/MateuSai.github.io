@@ -1,5 +1,6 @@
 ---
 post_id: wander_and_enclosure
+tags: [Godot 3.x]
 prev_tutorial: arrival
 ---
 

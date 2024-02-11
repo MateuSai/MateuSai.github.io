@@ -25,7 +25,7 @@ layout: default
         <time id="postDate">{{ page.date | date_to_string }}{% if page.last_updated %} (Updated on {{ page.last_updated | date_to_string }}){% endif %}</time>
         <ul id="tags-list">
             {% for tag in page.tags %}
-                <li>{{ tag }}</li>
+                <li><a href="/tag/{{tag}}">{{ tag }}</a></li>
             {% endfor %}
         </ul>
         <br>

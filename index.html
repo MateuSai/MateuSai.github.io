@@ -3,6 +3,15 @@ title: Home
 ---
 
 <h1>Home page</h1>
+
+<h2>Tags</h2>
+
+<ul id="tags-list">
+  {% for tag in site.tags %}
+      <li><a href="/tag/{{tag[0]}}">{{ tag[0] }}</a></li>
+  {% endfor %}
+</ul>
+
 <h2>Latest Posts</h2>
 
 <div class="two-columns-grid">

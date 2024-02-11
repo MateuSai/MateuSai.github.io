@@ -1,5 +1,6 @@
 ---
 post_id: seek_and_avoid
+tags: [Godot 3.x]
 next_tutorial: arrival
 ---
 

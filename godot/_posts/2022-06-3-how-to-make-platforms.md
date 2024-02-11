@@ -1,5 +1,6 @@
 ---
 post_id: how_to_make_platforms
+tags: [Godot 3.x]
 ---
 
 ![Platforms](/assets/images/godot/how_to_make_platforms/platforms.png)

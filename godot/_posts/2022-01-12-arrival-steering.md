@@ -1,5 +1,6 @@
 ---
 post_id: arrival
+tags: [Godot 3.x]
 prev_tutorial: seek_and_avoid
 next_tutorial: wander_and_enclosure
 ---

@@ -1,6 +1,9 @@
 ---
 post_id: load_json_into_dictionary
+tags: [Godot 3.x]
 ---
+
+To load a json into a dictionary we can use the following code:
 
 {% highlight gdscript %}
 var data: Dictionary
