@@ -12,24 +12,19 @@ var Game = $hxEnums["Game"] = { __ename__:true,__constructs__:null
 	,PLACEHOLDER: {_hx_name:"PLACEHOLDER",_hx_index:0,__enum__:"Game",toString:$estr}
 	,GAME_0: {_hx_name:"GAME_0",_hx_index:1,__enum__:"Game",toString:$estr}
 	,GAME_1: {_hx_name:"GAME_1",_hx_index:2,__enum__:"Game",toString:$estr}
-	,GAME_2: {_hx_name:"GAME_2",_hx_index:3,__enum__:"Game",toString:$estr}
 };
-Game.__constructs__ = [Game.PLACEHOLDER,Game.GAME_0,Game.GAME_1,Game.GAME_2];
+Game.__constructs__ = [Game.PLACEHOLDER,Game.GAME_0,Game.GAME_1];
 var Portfolio = function() { };
 Portfolio.__name__ = true;
 Portfolio.main = function() {
 	Portfolio.featuredGamesSection = window.document.getElementById("featured-games-section");
 	Portfolio.game0Button = window.document.getElementById("game-0-button");
 	Portfolio.game1Button = window.document.getElementById("game-1-button");
-	Portfolio.game2Button = window.document.getElementById("game-2-button");
 	Portfolio.game0Button.onclick = function() {
 		Portfolio.switchToGame(Game.GAME_0);
 	};
 	Portfolio.game1Button.onclick = function() {
 		Portfolio.switchToGame(Game.GAME_1);
-	};
-	Portfolio.game2Button.onclick = function() {
-		Portfolio.switchToGame(Game.GAME_2);
 	};
 	var gamesContainer = window.document.getElementById("games-container");
 	var _g = 0;
@@ -61,7 +56,7 @@ Portfolio.switchToGame = function(game) {
 	case 0:
 		window.document.getElementById("game-placeholder").remove();
 		break;
-	case 1:case 2:case 3:
+	case 1:case 2:
 		var tmp = window.document;
 		var e = Portfolio.activeGame;
 		tmp.getElementById($hxEnums[e.__enum__].__constructs__[e._hx_index]._hx_name.toLowerCase()).remove();
@@ -75,9 +70,6 @@ Portfolio.switchToGame = function(game) {
 		break;
 	case 2:
 		Portfolio.addGame("game_1","https://itch.io/embed-upload/5810929?color=3489e6","https://mateu-s.itch.io/diarreo-adventures","Play Diarreo Adventures on itch.io");
-		break;
-	case 3:
-		Portfolio.addGame("game_2","https://itch.io/embed-upload/8429237?color=000000","https://wekufu-studios.itch.io/a-new-home","Play A New Home");
 		break;
 	}
 	Portfolio.activeGame = game;
