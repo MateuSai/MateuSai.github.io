@@ -134,6 +134,44 @@ button:hover {
     background-color: $accent-hover-color;
 }
 
+.horizontal-container {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.game-container {
+    list-style: none;
+    padding: 0;
+
+    li {
+        position: relative;
+    }
+
+    a:hover {
+        filter: brightness(130%);
+    }
+
+    li>img {
+        object-fit: cover;
+        width: 200px;
+        height: 260px;
+    }
+}
+
+.game-links-container {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+
+    * {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 @import "top_nav";
 @import "post";
 @import "footer";

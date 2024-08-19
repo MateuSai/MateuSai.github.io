@@ -28,3 +28,34 @@ title: Home
   </article>
   {% endfor %}
 </div>
+
+<h2>Games I worked on</h2>
+<ul class="horizontal-container wrap game-container">
+  {% for item in site.data.games %}
+  <li>
+      <img src={{ item.cover }} alt="Game cover">
+      <div class="game-links-container">
+        {% for link in item.links %}
+        <a href="{{ link }}" target="_blank" rel="noopener noreferrer">
+          {% if link contains "itch.io" %}
+          <img src="/assets/images/logos/itchio.svg"
+          alt="Itch.io button">
+          {% elsif link contains "striked.gg" %}
+          <img src="/assets/images/logos/striked-rocket.svg"
+          alt="Striked button">
+          {% elsif link contains "raccreativegames.com" %}
+          <img src="/assets/images/logos/raccreativegames.png"
+          alt="Raccreative Games button">
+          {% elsif link contains "steampowered.com" %}
+          <img src="/assets/images/logos/steam.svg"
+          alt="Steam button">
+          {% else %}
+          <img src="/assets/images/logos/web.svg"
+          alt="Other button">
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+  </li>
+  {% endfor %}
+</ul>
