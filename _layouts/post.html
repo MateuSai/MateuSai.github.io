@@ -3,19 +3,28 @@ layout: default
 ---
 <div id="post-container">
     <nav id="side-bar">
-        {% assign category = page.categories[0] %}
-        <h2>{{ category | capitalize }} tutorials</h2>
-        <ul>
-            {% for post in site.categories[category] %}
-            <li>
-                {% if post.post_id != page.post_id %}
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                {% else %}
-                {{ post.title }}
-                {% endif %}
-            </li>
-            {% endfor %}
-        </ul>
+        <h2>Table of Contents</h2>
+        <div id="table-of-contents">
+            {% toc %}
+          </div>
+
+        <details>
+            {% assign category = page.categories[0] %}
+            <summary>
+            {{ category | capitalize }} tutorials
+            </summary>
+            <ul>
+                {% for post in site.categories[category] %}
+                <li>
+                    {% if post.post_id != page.post_id %}
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    {% else %}
+                    {{ post.title }}
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </details>
     </nav>
 
     <hr>

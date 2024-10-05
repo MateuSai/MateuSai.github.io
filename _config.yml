@@ -9,9 +9,13 @@ defaults:
     values:
       layout: "post"
       excerpt_separator: "<!--more-->"
+      toc: true
 
 markdown: kramdown
 
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+plugins:
+  - jekyll-toc
