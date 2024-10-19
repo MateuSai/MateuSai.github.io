@@ -6,6 +6,8 @@ To automatically mount a partition on startup we need to add a line to the fstab
 
 To view all the block devices use the `lsblk` command:
 
+<!--more-->
+
 {% highlight console %}
 [~]$ lsblk
 ...
@@ -48,7 +50,7 @@ UUID=0ba5e70e-bfd0-486d-8ea5-5558335f2454       /home/mateus/Games   ext4   defa
 
 - In the third the file system type, ext4 in this case.
 
-- In the fourth some options, we can leave it at "defaults" if we don't want anything special.
+- In the fourth some options, we can leave it at "defaults" if we don't want anything special. All the options available can be viewed [here](https://wiki.debian.org/fstab#line-33).
 
 - The fifth column is used to make backups, with a 0 we disable it.
 
