@@ -4,6 +4,9 @@
 - name: Godot
   link: /godot.html
   icon: /assets/images/logos/godot.svg
+- name: Linux
+  link: /linux.html
+  icon: /assets/images/logos/linux.svg
 - name: Flutter
   link: /flutter.html
   icon: /assets/images/logos/flutter.svg
