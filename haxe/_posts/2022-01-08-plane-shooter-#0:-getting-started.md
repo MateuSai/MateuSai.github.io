@@ -1,6 +1,5 @@
 ---
-post_id: plane_shooter_0
-next_tutorial: plane_shooter_1
+next_tutorial: plane-shooter-1-movement
 ---
 
 In this series of tutorials we will make a top-down shooter with planes using the [Ceramic framework](https://ceramic-engine.com){:target="_blank"}. Ceramic is a very recent 2d framework powered by the Haxe language. It seems very cool and has a lot of export platforms, so, let’s make a simple game with it!

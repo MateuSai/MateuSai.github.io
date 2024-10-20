@@ -1,5 +1,5 @@
 ---
-post_id: mount-partition-on-startup
+tags: [Partitions]
 ---
 
 To automatically mount a partition on startup we need to add a line to the fstab file. But first we need the UUID of the partition.

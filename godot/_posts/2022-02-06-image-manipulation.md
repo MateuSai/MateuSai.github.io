@@ -1,5 +1,4 @@
 ---
-post_id: image_manipulation
 last_updated: 2024-02-09
 tags: [Godot 4.x, Godot 3.x]
 ---

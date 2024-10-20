@@ -1,5 +1,4 @@
 ---
-post_id: place_atlas_tiles_with_gdscript
 tags: [Godot 3.x]
 last_updated: 2024-02-11
 ---

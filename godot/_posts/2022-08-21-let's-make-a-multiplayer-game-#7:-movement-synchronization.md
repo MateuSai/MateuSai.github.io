@@ -1,8 +1,7 @@
 ---
-post_id: multiplayer_game_7
 tags: [Godot 3.x]
-prev_tutorial: multiplayer_game_6
-next_tutorial: multiplayer_game_8
+prev_tutorial: let-s-make-a-multiplayer-game-6-game-transition
+next_tutorial: let-s-make-a-multiplayer-game-8-damage-and-revive
 discard_start: "Let's Make A Multiplayer Game #7:"
 
 thumbnail: "/assets/images/godot/multiplayer_game/7/thumbnail.jpg"

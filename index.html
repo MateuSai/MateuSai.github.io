@@ -16,16 +16,16 @@ title: Home
 
 <div class="two-columns-grid">
   {% for post in site.posts limit:4 %}
-  <article class="postPeek">
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <article class="postPeek">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 
-    {% if post.thumbnail %}
-    <img src="{{ post.thumbnail }}" alt="thumbnail">
-    {% endif %}
+      {% if post.thumbnail %}
+        <img src="{{ post.thumbnail }}" alt="thumbnail">
+      {% endif %}
 
-    {{ post.excerpt }}
+      {{ post.excerpt }}
 
-  </article>
+    </article>
   {% endfor %}
 </div>
 

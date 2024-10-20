@@ -1,8 +1,7 @@
 ---
-post_id: multiplayer_game_6
 tags: [Godot 3.x]
-prev_tutorial: multiplayer_game_5
-next_tutorial: multiplayer_game_7
+prev_tutorial: let-s-make-a-multiplayer-game-5-disconnections-and-player-list
+next_tutorial: let-s-make-a-multiplayer-game-7-movement-synchronization
 discard_start: "Let's Make A Multiplayer Game #6:"
 
 thumbnail: "/assets/images/godot/multiplayer_game/6/thumbnail.jpg"

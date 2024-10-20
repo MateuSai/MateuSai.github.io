@@ -1,7 +1,6 @@
 ---
-post_id: seek_and_avoid
 tags: [Godot 3.x]
-next_tutorial: arrival
+next_tutorial: arrival-steering
 ---
 
 While I was making the roguelike series, I found a few problems with the pathfinding: the paths are weird, the enemies can’t detect other enemies and the movement doesn’t look natural. So, I will make some tutorials about steering behaviours, a way to make the characters aware of their surroundings. We will start implementing the seek and avoid obstacles behaviours.

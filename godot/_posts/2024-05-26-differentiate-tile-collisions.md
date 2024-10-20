@@ -1,5 +1,4 @@
 ---
-post_id: differentiate_tile_collisions
 tags: [Godot 4.x, GDScript]
 ---
 

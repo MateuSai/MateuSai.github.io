@@ -1,8 +1,7 @@
 ---
-post_id: multiplayer_game_3
 tags: [Godot 3.x]
-prev_tutorial: multiplayer_game_2
-next_tutorial: multiplayer_game_4
+prev_tutorial: let-s-make-a-multiplayer-game-2-state-machine-and-hitbox
+next_tutorial: let-s-make-a-multiplayer-game-4-join-room
 discard_start: "Let's Make A Multiplayer Game #3:"
 
 thumbnail: "/assets/images/godot/multiplayer_game/3/thumbnail.jpg"

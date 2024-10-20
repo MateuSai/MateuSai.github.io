@@ -1,7 +1,6 @@
 ---
-post_id: multiplayer_game_0
 tags: [Godot 3.x]
-next_tutorial: multiplayer_game_1
+next_tutorial: let-s-make-a-multiplayer-game-1-map-and-player-movement
 discard_start: "Let's Make A Multiplayer Game #0:"
 
 thumbnail: "/assets/images/godot/multiplayer_game/0/thumbnail.jpg"

@@ -1,6 +1,5 @@
 ---
-post_id: compile_godot_export_templates
-tags: [Godot 4.x]
+tags: ["Godot 4.x"]
 ---
 
 The basic command to compile an export template is:

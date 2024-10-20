@@ -1,6 +1,5 @@
 ---
-post_id: plane_shooter_2
-prev_tutorial: plane_shooter_1
+prev_tutorial: plane-shooter-1-movement
 ---
 
 In this tutorial we are going to make a shooting mechanic for the plane we added in the previous tutorial. But, before that, let’s modify the display dimensions.

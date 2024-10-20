@@ -1,8 +1,6 @@
 ---
-post_id: multiplayer_game_10
 tags: [Godot 3.x]
-prev_tutorial: multiplayer_game_9
-next_tutorial: multiplayer_game_11
+prev_tutorial: let-s-make-a-multiplayer-game-9-character-selector
 discard_start: "Let's Make A Multiplayer Game #10:"
 
 thumbnail: "/assets/images/godot/multiplayer_game/10/thumbnail.jpg"

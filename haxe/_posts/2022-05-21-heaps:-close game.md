@@ -1,5 +1,4 @@
 ---
-post_id: multiple-compilation
 ---
 
 To exit the game and close the window, you only have to call the exit function available in the System class of the hxd package:

@@ -1,5 +1,4 @@
 ---
-post_id: add-app-to-application-menu
 ---
 
 Today I installed [Waterfox](https://www.waterfox.net/){:target="_blank"}. It comes inside a tar archive, so it doesn’t appear at the application menu, we have to add it manually. The process is the same if you want to add any other application.

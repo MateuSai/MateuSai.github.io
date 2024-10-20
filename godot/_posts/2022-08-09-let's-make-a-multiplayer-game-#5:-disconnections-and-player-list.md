@@ -1,8 +1,7 @@
 ---
-post_id: multiplayer_game_5
 tags: [Godot 3.x]
-prev_tutorial: multiplayer_game_4
-next_tutorial: multiplayer_game_6
+prev_tutorial: let-s-make-a-multiplayer-game-4-join-room
+next_tutorial: let-s-make-a-multiplayer-game-6-game-transition
 discard_start: "Let's Make A Multiplayer Game #5:"
 
 thumbnail: "/assets/images/godot/multiplayer_game/5/thumbnail.jpg"

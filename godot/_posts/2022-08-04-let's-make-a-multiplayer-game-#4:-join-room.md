@@ -1,8 +1,7 @@
 ---
-post_id: multiplayer_game_4
 tags: [Godot 3.x]
-prev_tutorial: multiplayer_game_3
-next_tutorial: multiplayer_game_5
+prev_tutorial: let-s-make-a-multiplayer-game-3-server-connection-and-room-creation
+next_tutorial: let-s-make-a-multiplayer-game-5-disconnections-and-player-list
 discard_start: "Let's Make A Multiplayer Game #4:"
 
 thumbnail: "/assets/images/godot/multiplayer_game/4/thumbnail.jpg"

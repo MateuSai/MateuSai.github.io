@@ -1,8 +1,7 @@
 ---
-post_id: arrival
 tags: [Godot 3.x]
-prev_tutorial: seek_and_avoid
-next_tutorial: wander_and_enclosure
+prev_tutorial: seek-and-avoid-steerings
+next_tutorial: wander-and-enclosure-steerings
 ---
 
 In the last tutorial, we made the character follow the mouse and avoid rocks, but if we leave the mouse still, we can observe that the character doesn’t stop moving. He keeps moving like a pendulum.

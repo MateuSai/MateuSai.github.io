@@ -1,7 +1,6 @@
 ---
-post_id: plane_shooter_1
-prev_tutorial: plane_shooter_0
-next_tutorial: plane_shooter_2
+prev_tutorial: plane-shooter-0-getting-started
+next_tutorial: plane-shooter-2-shooting
 ---
 
 We will start displaying the player image instead of the Ceramic logo.

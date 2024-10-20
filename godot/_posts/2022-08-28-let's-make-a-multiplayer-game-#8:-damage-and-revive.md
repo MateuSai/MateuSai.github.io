@@ -1,8 +1,7 @@
 ---
-post_id: multiplayer_game_8
 tags: [Godot 3.x]
-prev_tutorial: multiplayer_game_7
-next_tutorial: multiplayer_game_9
+prev_tutorial: let-s-make-a-multiplayer-game-7-movement-synchronization
+next_tutorial: let-s-make-a-multiplayer-game-9-character-selector
 discard_start: "Let's Make A Multiplayer Game #8:"
 
 thumbnail: "/assets/images/godot/multiplayer_game/8/thumbnail.jpg"

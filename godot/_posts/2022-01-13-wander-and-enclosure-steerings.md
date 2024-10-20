@@ -1,7 +1,6 @@
 ---
-post_id: wander_and_enclosure
 tags: [Godot 3.x]
-prev_tutorial: arrival
+prev_tutorial: arrival-steering
 ---
 
 In this tutorial we are going to implement the wander and enclosure steerings. We will make the character move randomly inside a defined area. This steering is useful, for example, with characters that don’t have anything to do until the player approaches them.
