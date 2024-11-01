@@ -12,7 +12,12 @@ title: Home
   {% endfor %}
 </ul>
 
-<h2>Latest Posts</h2>
+<div class="horizontal-container space-between">
+  <h2>Latest Posts</h2>
+  <h2>
+    <a href="/all.html">All</a>
+  </h2>
+</div>
 
 <div class="two-columns-grid">
   {% for post in site.posts limit:4 %}

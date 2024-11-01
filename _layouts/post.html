@@ -44,6 +44,15 @@ layout: default
 
         {{ content }}
 
+        {% if page.references %}
+            <h2>References</h2>
+            <ul>
+                {% for reference in page.references %}
+                    <li><a href="{{ reference }}">{{ reference }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
         <nav id="postNav">
             {% for post in site.posts %}
                 {% assign post_id = post.title | slugify %}
