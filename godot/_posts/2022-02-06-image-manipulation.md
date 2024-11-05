@@ -1,9 +1,9 @@
 ---
-last_updated: 2024-02-09
-tags: [Godot 4.x, Godot 3.x]
+last_updated: 2024-11-05
+tags: [Godot 4.x, Godot 3.x, GDScript]
 ---
 
-Hey bros, I was making a random character generated and I needed to manipulate textures. You know, cropping an image, putting one image on top of another, these things. I couldn’t find any tutorial about it, so I will make one myself.
+Hey bros, I was making a random character generator and I needed to manipulate textures. You know, cropping an image, putting one image on top of another, these things. I couldn’t find any tutorial about it, so I will make one myself.
 
 The project I’m going to use only has two nodes: a Node2D as root, and a Sprite to display the modified image as his child.
 
