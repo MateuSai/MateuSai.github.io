@@ -8,6 +8,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      author: "Mateu"
       excerpt_separator: "<!--more-->"
       toc: true
 
@@ -19,3 +20,4 @@ kramdown:
 
 plugins:
   - jekyll-toc
+  - jekyll-feed
