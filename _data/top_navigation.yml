@@ -5,19 +5,19 @@
   link: /
   icon: null
 - name: Godot
-  link: /godot.html
+  link: /godot/
   icon: /assets/images/logos/godot.svg
 - name: Linux
-  link: /linux.html
+  link: /linux/
   icon: /assets/images/logos/linux.svg
 - name: Flutter
-  link: /flutter.html
+  link: /flutter/
   icon: /assets/images/logos/flutter.svg
 - name: Haxe
-  link: /haxe.html
+  link: /haxe/
   icon: /assets/images/logos/haxe.svg
 - name: Other
-  link: /other.html
+  link: /other/
   icon: null
 - name: Memes
   link: /memes.html
