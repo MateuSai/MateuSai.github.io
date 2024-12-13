@@ -1,7 +1,11 @@
 ---
 thumbnail: /assets/images/linux/sync_contacts_and_calendars_between_android_and_pc/radicale_addressbook_added.png
-tags: ["Server", "Sync"]
-references: ["https://radicale.org/v3.html", "https://packages.debian.org/search?searchon=contents&keywords=htpasswd&mode=path&suite=stable&arch=any"]
+tags: ["Server", "Sync", "Self-hosting"]
+references:
+  [
+    "https://radicale.org/v3.html",
+    "https://packages.debian.org/search?searchon=contents&keywords=htpasswd&mode=path&suite=stable&arch=any",
+  ]
 ---
 
 Having to manage contacts and calendars separately from different devices is a pain in the ass, let's see how to synchronize them.
