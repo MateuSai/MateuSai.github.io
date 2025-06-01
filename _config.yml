@@ -13,6 +13,15 @@ defaults:
       author: "Mateu"
       excerpt_separator: "<!--more-->"
       toc: true
+  - scope:
+      path: "_books"
+    values:
+      layout: "greek_book"
+
+collections:
+  books:
+    output: true
+    relative_directory: books
 
 markdown: kramdown
 

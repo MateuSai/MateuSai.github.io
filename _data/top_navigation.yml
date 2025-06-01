@@ -19,6 +19,9 @@
 - name: Other
   link: /other/
   icon: null
+- name: Books
+  link: /books/
+  icon: /assets/images/logos/book.svg
 - name: Memes
   link: /memes.html
   icon: null

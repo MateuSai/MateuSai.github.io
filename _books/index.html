@@ -1,0 +1,14 @@
+---
+layout: default
+title: Books
+---
+
+<h1>Books</h1>
+
+{% for book in site.books %} {% assign splitted_url_size = book.url | split: '/'
+| size %} {% if splitted_url_size == 4 %} {% unless book.url contains 'toc.html'
+%}
+<h2>
+  <a href="{{ book.url }}"> {{ book.name | replace: ".md", "" }} </a>
+</h2>
+{% endunless %} {% endif %} {% endfor %}

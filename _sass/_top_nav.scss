@@ -15,7 +15,9 @@
     background-color: darken($accent-color, 7%);
 }
 
-#topNav>ul>li {}
+#topNav>ul>li>a>img {
+    width: 16px;
+}
 
 
 

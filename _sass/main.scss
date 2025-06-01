@@ -183,6 +183,33 @@ button:hover {
     }
 }
 
+.bilingual-book{
+    >p:nth-child(even) {
+        text-align: left;
+        display: inline-block;
+        width: 47%;
+        vertical-align: top;
+    }
+
+    >p:nth-child(odd) {
+        text-align: left;
+        display: inline-block;
+        width: 47%;
+        margin-left: 5%;
+        color: black;
+        background-color: black;
+    }
+    >p:nth-child(odd):hover {
+        color: inherit;
+        background-color: inherit;
+    }
+
+    >p:last-child {
+        color: inherit;
+        background-color: inherit;
+    }
+}
+
 @import "top_nav";
 @import "post";
 @import "footer";
